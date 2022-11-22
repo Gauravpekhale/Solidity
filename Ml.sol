@@ -6,6 +6,7 @@ from sklearn.model_selection import train_test_split # data -> train test
 from sklearn.metrics import confusion_matrix, accuracy_score,classification_report    #accuracy 
 from sklearn.neighbors import KNeighborsClassifier     #algorithm
 from sklearn.preprocessing import StandardScaler # scaled down 0 1 
+df=pd.read_csv("emails.csv") 
 
 X = df.iloc[:, 1:-1].values
 y = df.iloc[:, -1].values 
